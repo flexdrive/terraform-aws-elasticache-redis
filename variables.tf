@@ -40,6 +40,11 @@ variable "elasticache_subnet_group_name" {
   default     = ""
 }
 
+variable "elasticache_subnet_count" {
+  default     = "0"
+  description = "Subnet group count for the ElastiCache instance"
+}
+
 variable "maintenance_window" {
   default     = "wed:03:00-wed:04:00"
   description = "Maintenance window"
